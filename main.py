@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw, ImageFont
-img = Image.open('/home/KHPK.RU/student/Рабочий стол/Жыпеги/КОМПЬЮТЕР 1.jpeg') # открываем изображение
-
 img = Image.new('RGB', (200, 200), 'black')
-img.save('test1.jpg')
-img = Image.open('test1.jpg')
+idraw = ImageDraw.Draw(img)
+idraw.rectangle((0,0,100,100), fill = 'white')
+img.save('test2.jpg')
+img = Image.open('test2.jpg')
 img.show()
